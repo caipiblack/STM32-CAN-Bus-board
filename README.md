@@ -9,6 +9,8 @@ The project use symbols/footprints from various libraries.
 
 ## Digikey Kicad Library
 
+This library is used to get the footprint `DO-214AC`:
+
 ```
 mkdir -p ~/Documents/kicad_libs
 cd ~/Documents/kicad_libs
