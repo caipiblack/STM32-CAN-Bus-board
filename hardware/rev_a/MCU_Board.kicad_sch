@@ -2673,7 +2673,7 @@
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 230.632 34.29 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://fr.farnell.com/multicomp/mc01w08055120r/res-couche-epaisse-120r-5-0-1w/dp/9333819" (at 232.41 34.29 0)
+    (property "Datasheet" "https://fr.farnell.com/panasonic/erjup6d1200v/res-120r-0-5-0-5w-0805/dp/3599150" (at 232.41 34.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 6f68199c-634d-434a-8522-3d69964ad937))

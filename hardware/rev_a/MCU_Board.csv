@@ -1,0 +1,22 @@
+Qty,Reference(s),Value,Datasheet
+2,"C1, C2",18p,https://fr.farnell.com/avx/08055a180jat2a/cond-18pf-50v-5-c0g-np0-0805/dp/2280674
+5,"C3, C7, C8, C9, C10",100n,https://fr.farnell.com/multicomp/mcsh21b104k160ct/condensateur-0-1-f-16v-10-x7r/dp/1856445
+2,"C4, C5",2u2,https://fr.farnell.com/kemet/c0805c225k4pactu/condensateur-2-2-f-16v-10-x5r/dp/2773238
+1,C6,10n,https://fr.farnell.com/multicomp/mcsh21b103k160ct/cond-0-01-f-16v-10-x7r-0805/dp/1856438
+1,D1,"PMEG3020EJ,115","https://fr.farnell.com/nexperia/pmeg3020ej-115/redresseur-schottky-30v-2a-sod323f/dp/1757772?st=pmeg3020ej,115"
+1,D3,SM24CANB-02HTG,https://fr.farnell.com/littelfuse/sm24canb-02htg/diode-protection-esd-aec-q101/dp/2749174
+1,D4,SMBJ12CA-E3/52,https://fr.farnell.com/vishay/smbj12ca-e3-52/diode-tvs-600w-12v-bidir-smb/dp/1698866
+1,FB1,Ferrite_Bead,https://fr.farnell.com/laird/mi0805k400r-10/perle-de-ferrite-2012-100mhz-40r/dp/2292459
+1,J1,ST-Link,https://fr.farnell.com/molex/22-28-4040/header-4pos-1range-2-54mm/dp/2381172
+2,"J2, J4",Conn_01x08,https://fr.farnell.com/molex/22-28-4081/conn-header-8-voies-1-rangee-2/dp/3049535
+1,J3,Bus,https://fr.farnell.com/multicomp/mc000036/bornier-ci-noir-5-08mm-vis-04/dp/2008006
+1,J5,Conn_02x07_Odd_Even,~
+1,JP1,Jumper_2_Open,~
+1,R1,100k,https://fr.farnell.com/multicomp/mcsr08x1003ftl/res-ceramique-100k-1-0-125w-0805/dp/2074335
+1,R2,10k,https://fr.farnell.com/multicomp/mcsr08x103-jtl/res-ceramique-10k-5-0-125w-0805/dp/2074340
+1,R4,120,https://fr.farnell.com/panasonic/erjup6d1200v/res-120r-0-5-0-5w-0805/dp/3599150
+1,SW1,nRST,https://fr.farnell.com/omron/b3u-1000p-b/tactile-commutateur-top-actuated/dp/1333654
+1,U1,STM32F042K6Tx,https://fr.farnell.com/stmicroelectronics/stm32f042k6t6/mcu-arm-cortex-m0-48mhz-lqfp-32/dp/2750629
+1,U3,SN65HVD230,https://fr.farnell.com/texas-instruments/sn65hvd230dr/ic-can-transceiver-1mbps-8soic/dp/3124671
+1,U4,LP2985-3.3,https://fr.farnell.com/texas-instruments/lp2985-33dbvr/ldo-fixed-3-3v-0-15a-sot-23-5/dp/3007616
+1,Y1,8Mhz,https://fr.farnell.com/abracon/abl-8-000mhz-b2/crystal-8mhz-18pf-hc-49us/dp/2467712
