@@ -1,7 +1,7 @@
 Qty,Reference(s),Value,Datasheet
 2,"C1, C2",18p,https://fr.farnell.com/avx/08055a180jat2a/cond-18pf-50v-5-c0g-np0-0805/dp/2280674
 5,"C3, C7, C8, C9, C10",100n,https://fr.farnell.com/multicomp/mcsh21b104k160ct/condensateur-0-1-f-16v-10-x7r/dp/1856445
-2,"C4, C5",2u2,https://fr.farnell.com/kemet/c0805c225k4pactu/condensateur-2-2-f-16v-10-x5r/dp/2773238
+2,"C4, C5",10u,https://fr.farnell.com/walsin/0805x106m250cp/cap-10uf-25v-mlcc-0805/dp/3764157
 1,C6,10n,https://fr.farnell.com/multicomp/mcsh21b103k160ct/cond-0-01-f-16v-10-x7r-0805/dp/1856438
 1,D1,"PMEG3020EJ,115","https://fr.farnell.com/nexperia/pmeg3020ej-115/redresseur-schottky-30v-2a-sod323f/dp/1757772?st=pmeg3020ej,115"
 1,D3,SM24CANB-02HTG,https://fr.farnell.com/littelfuse/sm24canb-02htg/diode-protection-esd-aec-q101/dp/2749174
@@ -10,7 +10,7 @@ Qty,Reference(s),Value,Datasheet
 1,J1,ST-Link,https://fr.farnell.com/molex/22-28-4040/header-4pos-1range-2-54mm/dp/2381172
 2,"J2, J4",Conn_01x08,https://fr.farnell.com/molex/22-28-4081/conn-header-8-voies-1-rangee-2/dp/3049535
 1,J3,Bus,https://fr.farnell.com/camdenboss/ctbp0158-2/bornier-fil-a-carte-2-voies-12awg/dp/3228568
-1,J5,Conn_02x07_Odd_Even,~
+1,J5,Conn_02x07_Odd_Even,https://fr.farnell.com/amphenol-fci/10129381-914004blf/conn-header-14-voies-2-rangs-2/dp/3881595
 1,JP1,Jumper_2_Open,~
 1,R1,100k,https://fr.farnell.com/multicomp/mcsr08x1003ftl/res-ceramique-100k-1-0-125w-0805/dp/2074335
 1,R2,10k,https://fr.farnell.com/multicomp/mcsr08x103-jtl/res-ceramique-10k-5-0-125w-0805/dp/2074340
