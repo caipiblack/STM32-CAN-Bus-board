@@ -9,7 +9,7 @@ Qty,Reference(s),Value,Datasheet
 1,FB1,Ferrite_Bead,https://fr.farnell.com/laird/mi0805k400r-10/perle-de-ferrite-2012-100mhz-40r/dp/2292459
 1,J1,ST-Link,https://fr.farnell.com/molex/22-28-4040/header-4pos-1range-2-54mm/dp/2381172
 2,"J2, J4",Conn_01x08,https://fr.farnell.com/molex/22-28-4081/conn-header-8-voies-1-rangee-2/dp/3049535
-1,J3,Bus,https://fr.farnell.com/multicomp/mc000036/bornier-ci-noir-5-08mm-vis-04/dp/2008006
+1,J3,Bus,https://fr.farnell.com/camdenboss/ctbp0158-2/bornier-fil-a-carte-2-voies-12awg/dp/3228568
 1,J5,Conn_02x07_Odd_Even,~
 1,JP1,Jumper_2_Open,~
 1,R1,100k,https://fr.farnell.com/multicomp/mcsr08x1003ftl/res-ceramique-100k-1-0-125w-0805/dp/2074335

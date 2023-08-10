@@ -6,6 +6,8 @@ All the pins of the STM32 that are not already used are available on the connect
 
 The available pins provide many peripherals (ADC, SPI, I2C, GPIO and more) that can be used for many projects (IOT sensors, security sensors, automation...)
 
+![3D PCB](docs/images/pcb_3d.png)
+
 # Kicad project
 
 The Kicad project as been created with the version 7.0.6 of Kicad.

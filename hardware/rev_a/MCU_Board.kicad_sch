@@ -2226,7 +2226,7 @@
     (property "Footprint" "custom:PhoenixContact_MSTBVA_2,5_4-G-5,08_1x04_P5.08mm_Vertical_custom" (at 273.05 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://fr.farnell.com/multicomp/mc000036/bornier-ci-noir-5-08mm-vis-04/dp/2008006" (at 273.05 39.37 0)
+    (property "Datasheet" "https://fr.farnell.com/camdenboss/ctbp0158-2/bornier-fil-a-carte-2-voies-12awg/dp/3228568" (at 273.05 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b4665c11-3cce-427c-962f-e5db1233cfc3))
