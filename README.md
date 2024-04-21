@@ -10,7 +10,7 @@ The available pins provide many peripherals (ADC, SPI, I2C, GPIO and more) that 
 
 # Kicad project
 
-The Kicad project as been created with the version 7.0.6 of Kicad.
+The Kicad project as been created with the version 8.0.1 of Kicad.
 
 Most of the symbols and footprints comes from the default libraries.
 
