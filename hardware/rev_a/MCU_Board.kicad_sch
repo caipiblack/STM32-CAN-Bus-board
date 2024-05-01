@@ -8573,7 +8573,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "6k2"
 			(at 179.07 147.32 0)
 			(effects
 				(font
@@ -8591,7 +8591,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/multicomp/mcsr08x103-jtl/res-ceramique-10k-5-0-125w-0805/dp/2074340"
+		(property "Datasheet" "https://fr.farnell.com/multicomp/mcwr08x6201ftl/resistance-thick-film-6-2kohm/dp/2447709"
 			(at 184.15 146.05 0)
 			(effects
 				(font
@@ -10976,7 +10976,7 @@
 				)
 			)
 		)
-		(property "Value" "6k2"
+		(property "Value" "10k"
 			(at 199.39 142.24 90)
 			(effects
 				(font
@@ -10993,7 +10993,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fr.farnell.com/multicomp/mcwr08x6201ftl/resistance-thick-film-6-2kohm/dp/2447709"
+		(property "Datasheet" "https://fr.farnell.com/multicomp/mcsr08x103-jtl/res-ceramique-10k-5-0-125w-0805/dp/2074340"
 			(at 199.39 139.7 0)
 			(effects
 				(font
