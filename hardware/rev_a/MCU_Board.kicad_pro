@@ -680,6 +680,12 @@
           "label": "Description",
           "name": "Description",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Documentation2",
+          "name": "Documentation2",
+          "show": false
         }
       ],
       "filter_string": "",
