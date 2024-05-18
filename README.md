@@ -43,3 +43,18 @@ Testing instructions:
 - If the previous tests pass, turn off the power and plug the `NUCLEO-L432KC` board in the headers then turn on the power.
   - At this point the power consumption (on 12V line) should be less than 10mA.
 - If the previous tests pass, connect the `NUCLEO-L432KC` board to the computer and flash it.
+- Test the CAN interface:
+  - Plug a USB<>CAN device from a Linux computer to the board.
+  - On the computer, execute these commands:
+```
+sudo apt-get install can-utils
+sudo modprobe vcan
+sudo ip link add dev can0 type vcan
+sudo ip link set up can0 type can bitrate 125000
+candump -td -a can0
+```
+  - Reset the board
+  - On the `candump` you should see something like this:
+```
+ (000.000000)  can0  71D   [1]  00                        '.'
+```
