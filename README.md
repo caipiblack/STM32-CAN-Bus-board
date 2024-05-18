@@ -58,3 +58,19 @@ candump -td -a can0
 ```
  (000.000000)  can0  71D   [1]  00                        '.'
 ```
+
+# Base project
+
+## Project creation
+
+TODO
+
+## Configure the object dictionary
+
+1. Find the last release of `CANopenEditor` and download the binaries [link](https://github.com/CANopenNode/CANopenEditor/releases)
+2. Extract the release binary archive
+3. Open `EDSEditor.exe` with wine:
+```
+wine net481/EDSEditor.exe
+```
+4. Open the file `CANopenNode_STM32/DS301_profile.xpd`
