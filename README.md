@@ -194,3 +194,41 @@ int main(void)
 wine net481/EDSEditor.exe
 ```
 4. Open the file `CANopenNode_STM32/DS301_profile.xpd`
+
+## CANopenLinux
+
+CANopenLinux can be used as a gateway to communicate with CANopen devices using socket/stdio commands.
+
+Setup the CAN interface:
+```
+sudo apt-get install can-utils
+sudo modprobe vcan
+# Do it only if can0 is not already mounted!
+#sudo ip link add dev can0 type vcan
+sudo ip link set up can0 type can bitrate 250000
+```
+
+Download and install CANopenLinux:
+```
+git clone https://github.com/CANopenNode/CANopenLinux.git
+cd CANopenLinux
+git submodule update --init --recursive
+make
+```
+
+Read an OD entry from the computer:
+```
+./canopend can0 -i 1 -c "stdio"
+20 r 0x1000 0
+[0] 34 12 00 00
+```
+
+Write an OD entry from the computer:
+```
+./canopend can0 -i 1 -c "stdio"
+20 w 0x6001 0 U32 0
+[0] OK
+```
+
+_In my example, 0x6001 controls the LED!_
+

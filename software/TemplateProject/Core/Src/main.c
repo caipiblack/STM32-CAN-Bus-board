@@ -22,6 +22,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "CO_app_STM32.h"
+#include "OD.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -115,6 +116,23 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  canopen_app_process();
+
+#if 0
+	  // Refresh the value of the variable and send the TPDO
+	  OD_set_u32(OD_find(OD, 0x6000), 0X00, 0xDEADBEEF, false);
+	  CO_TPDOsendRequest(&canOpenNodeSTM32.canOpenStack->TPDO[0]);
+#else
+	  // Only refresh the value of the variable, so it will send the
+	  // TPDO only depending on the configuration of the TPDO (interval)
+	  OD_PERSIST_COMM.x6000_mouvement_sensor += 1;
+#endif
+
+	  if (OD_PERSIST_COMM.x6001_LED > 0) {
+		  HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_SET);
+	  } else {
+		  HAL_GPIO_WritePin(LD3_GPIO_Port, LD3_Pin, GPIO_PIN_RESET);
+	  }
+	  HAL_Delay(100);
   }
   /* USER CODE END 3 */
 }
