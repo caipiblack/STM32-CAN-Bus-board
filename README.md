@@ -31,6 +31,8 @@ sudo apt update
 sudo apt install kicad
 ```
 
+The last production files are stored in the directory [hardware/rev_a/fab](hardware/rev_a/fab).
+
 ## Configuration of the NUCLEO-L432KC board
 
 Some modifications are required to be able to power the Nucleo board from external 3V3 regulator (provided by the shield):
