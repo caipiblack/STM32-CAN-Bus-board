@@ -90,6 +90,8 @@ This repository comes with a demo software in the `software` directory: This sof
 
 This guide also describe how to create a project from scratch for the `STM32-CAN-Bus-board` board.
 
+The LED can be controlled by writing in the object at index `0x6001`. (See examples at `CANopenLinux` section).
+
 ## Tools setup
 
 1. Download and install `STM32CubeIDE` from [here](https://www.st.com/en/development-tools/stm32cubeide.html)
