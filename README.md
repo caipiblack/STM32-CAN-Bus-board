@@ -31,7 +31,7 @@ sudo apt update
 sudo apt install kicad
 ```
 
-## Configuration of the NUCLEO-L432KC board
+## Configuration of the NUCLEO-L432KC board
 
 Some modifications are required to be able to power the Nucleo board from external 3V3 regulator (provided by the shield):
 - Remove the jumper!
