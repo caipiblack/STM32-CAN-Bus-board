@@ -1,15 +1,19 @@
 STM32-CAN-Bus-board
 -------------------
 
-This is an STM32F042K6T6 based board that can be used to build sensors that communicate over a CAN bus
+CAN Bus shield with external power supply (12V/24V) for NUCLEO-L432KC board.
 
-All the pins of the STM32 that are not already used are available on the connectors
+All the pins of the NUCLEO-L432KC board are available on the connectors of the shield.
 
 The available pins provide many peripherals (ADC, SPI, I2C, GPIO and more) that can be used for many projects (IOT sensors, security sensors, automation...)
 
-![3D PCB](docs/images/pcb_3d.png)
+![PCB Mounted](docs/images/pcb_mounted.jpg)
 
 # Hardware
+
+This part describe how the schematic was made, how to mount the PCB and how to test it.
+
+**IMPORTANT: This shield require some modifications on the Nucleo board to works (due to external supply) (see after)**
 
 ## Kicad project
 
@@ -27,7 +31,21 @@ sudo apt update
 sudo apt install kicad
 ```
 
+## Configuration of the NUCLEO-L432KC board
+
+Some modifications are required to be able to power the Nucleo board from external 3V3 regulator (provided by the shield):
+- Remove the jumper!
+- Remove SB9.
+- Remove SB14.
+
+After these changes:
+- The 3V3 power for the STM32 will be provided by "external power source" (the shield).
+- The debug/flash side of Nucleo board will not be powered by the "external power source" (the shield).
+- To flash or debug the Nucleo board, the Nucleo board must be connected by USB to the computer (The St-Link chip will be powered by 5V>3V regulator in the Nucleo board) AND the 3V3 power must be supplied by the shield (to power the STM32 chip).
+
 ## PCB mounting instructions
+
+![PCB Mounted](docs/images/pc_assembly_1.jpg)
 
 Mount the components on the board:
 1. Take the PCB and fix it to the table.
@@ -37,15 +55,8 @@ Mount the components on the board:
 - Temperature: 300°C.
 4. Solder the CMS components in this order: D4, D6, D1, D5, D2, U2, U3.
 5. Solder the other components in this order: C1, C10, C4, R4, R2, R6, R3, R5, F1, Jumper, C6, C5, L1.
-6. Mount the `NUCLEO-L432KC` board in the headers and solder the headers to the PCB (Doing it like this prevent issues with headers that are not perfectly vertical).
+6. Mount the `NUCLEO-L432KC` board in the headers and solder the headers to the PCB (Doing it like this prevent issues with headers that are not perfectly vertical or parallel).
 7. Remove the nucleo board from the soldered headers.
-
-Configuration of the `NUCLEO-L432KC` board:
-- Remove the jumper!
-- Remove SB9.
-- Remove SB14.
-
-**WARNING: Do not put the `NUCLEO-L432KC` board on the `STM32-CAN-Bus-board` and power on without removing the jumper, SB9 and SB14!**
 
 ## PCB testing instructions
 
@@ -56,7 +67,7 @@ Testing instructions:
   - Measure the voltage in the 3V3 pin and check that the voltage is around 3.3V.
 - If the previous tests pass, turn off the power and plug the `NUCLEO-L432KC` board in the headers then turn on the power.
   - At this point the power consumption (on 12V line) should be less than 10mA.
-- If the previous tests pass, connect the `NUCLEO-L432KC` board to the computer and flash it.
+- If the previous tests pass, connect the `NUCLEO-L432KC` board to the computer and flash it with the template project.
 - Test the CAN interface:
   - Plug a USB<>CAN device from a Linux computer to the board.
   - On the computer, execute these commands:
