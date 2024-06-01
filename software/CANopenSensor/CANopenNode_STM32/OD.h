@@ -16,7 +16,7 @@
 
         Created:      23/11/2020 13:00:00
         Created By:   
-        Modified:     30/05/2024 21:34:28
+        Modified:     01/06/2024 20:51:38
         Modified By:  
 
     Device Info:
@@ -122,7 +122,7 @@ typedef struct {
         uint32_t applicationObject8;
     } x1A00_TPDOMappingParameter;
     uint8_t x6000_state;
-    uint32_t x6001_LED;
+    uint8_t x6001_controllerState;
 } OD_PERSIST_COMM_t;
 
 typedef struct {
@@ -207,7 +207,7 @@ extern OD_ATTR_OD OD_t *OD;
 #define OD_ENTRY_H1800_TPDOCommunicationParameter &OD->list[19]
 #define OD_ENTRY_H1A00_TPDOMappingParameter &OD->list[20]
 #define OD_ENTRY_H6000_state &OD->list[21]
-#define OD_ENTRY_H6001_LED &OD->list[22]
+#define OD_ENTRY_H6001_controllerState &OD->list[22]
 
 
 /*******************************************************************************

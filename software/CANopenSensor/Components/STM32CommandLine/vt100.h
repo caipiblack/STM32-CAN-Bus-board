@@ -20,15 +20,15 @@
 #define KEY_DELETE			"\x1b\x5b\x33\x7e" /*[Delete] key */
 
 enum {
-    E_FONT_BLACK,
-    E_FONT_L_RED,
-    E_FONT_RED,
-    E_FONT_GREEN,
-    E_FONT_YELLOW,
-    E_FONT_BLUE,
-    E_FONT_PURPLE,
-    E_FONT_CYAN,
-    E_FONT_WHITE,
+	E_FONT_BLACK,
+	E_FONT_L_RED,
+	E_FONT_RED,
+	E_FONT_GREEN,
+	E_FONT_YELLOW,
+	E_FONT_BLUE,
+	E_FONT_PURPLE,
+	E_FONT_CYAN,
+	E_FONT_WHITE,
 };
 
 #define PRINTF_COLOR(c, ...) _Pragma ("GCC warning \"'PRINTF_COLOR' macro is deprecated\"")   do {                            \
@@ -68,42 +68,42 @@ enum {
 /* terminal display-----------------------------------------------------BEGIN */
 
 /*
-    @links: http://blog.csdn.net/yangguihao/article/details/47734349
-            http://blog.csdn.net/kevinshq/article/details/8179252
+ @links: http://blog.csdn.net/yangguihao/article/details/47734349
+ http://blog.csdn.net/kevinshq/article/details/8179252
 
 
-    @terminal setting commands:
-        \033[0m     reset all
-        \033[1m     set high brightness
-        \03[4m      underline
-        \033[5m     flash
-        \033[7m     reverse display
-        \033[8m     blanking
-        \033[30m    --  \033[37m  set font color
-        \033[40m    --  \033[47m  set background color
-        \033[nA     cursor up up n lines
-        \033[nB     cursor move up n lines
-        \033[nC     cursor move right n lines
-        \033[nD     cursor left up n lines
-        \033[y;xH   set cursor position
-        \033[2J     clear all display
-        \033[K      clear line
-        \033[s      save cursor position
-        \033[u      restore cursor position
-        \033[?25l   cursor invisible
-        \33[?25h    cursor visible
+ @terminal setting commands:
+ \033[0m     reset all
+ \033[1m     set high brightness
+ \03[4m      underline
+ \033[5m     flash
+ \033[7m     reverse display
+ \033[8m     blanking
+ \033[30m    --  \033[37m  set font color
+ \033[40m    --  \033[47m  set background color
+ \033[nA     cursor up up n lines
+ \033[nB     cursor move up n lines
+ \033[nC     cursor move right n lines
+ \033[nD     cursor left up n lines
+ \033[y;xH   set cursor position
+ \033[2J     clear all display
+ \033[K      clear line
+ \033[s      save cursor position
+ \033[u      restore cursor position
+ \033[?25l   cursor invisible
+ \33[?25h    cursor visible
 
 
-    @background color: 40--49           @font color: 30--39
-        40: BLACK                           30: black
-        41: RED                             31: red
-        42: GREEN                           32: green
-        43: YELLOW                          33: yellow
-        44: BLUE                            34: blue
-        45: PURPLE                          35: purple
-        46: CYAN                            36: deep green
-        47: WHITE                           37: white
-*/
+ @background color: 40--49           @font color: 30--39
+ 40: BLACK                           30: black
+ 41: RED                             31: red
+ 42: GREEN                           32: green
+ 43: YELLOW                          33: yellow
+ 44: BLUE                            34: blue
+ 45: PURPLE                          35: purple
+ 46: CYAN                            36: deep green
+ 47: WHITE                           37: white
+ */
 
 /* font color */
 

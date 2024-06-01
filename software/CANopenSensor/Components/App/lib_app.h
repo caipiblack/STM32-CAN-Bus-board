@@ -40,7 +40,8 @@
  * Exported functions declaration
  ************************************************************************************************************/
 void APP_Init(CAN_HandleTypeDef *hCan, TIM_HandleTypeDef *hTim,
-		void (*hCanHWInitFunction)(), UART_HandleTypeDef *hUart);
+		void (*hCanHWInitFunction)(), UART_HandleTypeDef *hUart,
+		TIM_HandleTypeDef *hTimPwm);
 void APP_Start(void);
 void APP_ExecFromMainLoop(void);
 /************************************************************************************************************

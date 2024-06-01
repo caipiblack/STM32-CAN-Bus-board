@@ -21,9 +21,6 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-// CANopen Stack
-#include "CO_app_STM32.h"
-#include "OD.h"
 // Application
 #include "lib_app.h"
 /* USER CODE END Includes */
@@ -104,7 +101,7 @@ int main(void) {
 	MX_TIM16_Init();
 	MX_TIM6_Init();
 	/* USER CODE BEGIN 2 */
-	APP_Init(&hcan1, &htim6, MX_CAN1_Init, &huart2);
+	APP_Init(&hcan1, &htim6, MX_CAN1_Init, &huart2, &htim16);
 	/* USER CODE END 2 */
 
 	/* Infinite loop */
@@ -117,28 +114,6 @@ int main(void) {
 
 		/* USER CODE BEGIN 3 */
 		APP_ExecFromMainLoop();
-
-#if 0
-	  i++;
-	  if (i < 2) {
-		  HAL_TIM_PWM_Start(&htim16, TIM_CHANNEL_1);
-	  } else {
-		  HAL_TIM_PWM_Stop(&htim16, TIM_CHANNEL_1);
-
-		  if (i > 10) {
-			  i = 0;
-		  }
-	  }
-#if 0
-	  // Refresh the value of the variable and send the TPDO
-	  OD_set_u32(OD_find(OD, 0x6000), 0X00, 0xDEADBEEF, false);
-	  CO_TPDOsendRequest(&canOpenNodeSTM32.canOpenStack->TPDO[0]);
-#else
-	  // Only refresh the value of the variable, so it will send the
-	  // TPDO only depending on the configuration of the TPDO (interval)
-	  OD_PERSIST_COMM.x6000_state += 1;
-#endif
-#endif
 	}
 	/* USER CODE END 3 */
 }
